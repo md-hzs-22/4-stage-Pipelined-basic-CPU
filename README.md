@@ -21,7 +21,7 @@ As we can see in aboove image at t3, instruction 3 is at fetching, instruction 2
 
 So, taking the idea of pipelining, I implemented the CPU by writing the codes of each and every section such as ALU, control unit, register file, instruction memory ,etc and joined them together to work as a functioning pipelined CPU. Following is the image of pipelined CPU. 
 
-![Bad request](https://github.com/md-hzs-22/4-stage-Pipelined-basic-CPU/blob/main/Screenshot%202024-06-26%20163857.png)
+![Bad request](https://github.com/md-hzs-22/4-stage-Pipelined-basic-CPU/blob/main/Screenshots/Screenshot%202024-06-26%20163857.png)
 
 `Note that ALU is written to handle simple instructions, that are, ADD, SUB, AND, XOR, COM, MUL, ADDI. So if you want to add a new insruction for testing in imem_test().txt, take care of this situation.`
 
