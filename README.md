@@ -23,9 +23,16 @@ So, taking the idea of pipelining, I implemented the CPU by writing the codes of
 
 ![Bad request](https://github.com/md-hzs-22/4-stage-Pipelined-basic-CPU/blob/main/Screenshot%202024-06-26%20163857.png)
 
+`Note that ALU is written to handle simple instructions, that are, ADD, SUB, AND, XOR, COM, MUL, ADDI. So if you want to add a new insruction for testing in imem_test().txt, take care of this situation.`
+
 ## Technical Stack
 
 - Language used : Verilog
 - Software on which this will work - Xilinx Vivado
 
-## Details about the project
+## How to run
+
+In order to run the CPU, you need to download each and every file in the single folder. After that, create a new project on Vivado software and add each and every file to the project. Select Zedboard for the project. After you created the project set testbench file as the top priority file and run simulation for seeing the result. And if you want to implement on boards like zedboard, make pipelined_4stage.v as top priority. 
+
+## Usage
+
