@@ -1,4 +1,5 @@
 //testbench 
+// if you want to add a instruction, then first convert it in hexadecimal format and then list it befor NOP and incrementing the indexes (first 8 digits.)
 00000000 00000000
 00000001 05031000 //SUb $2,$8,$3
 00000002 00430800 //Add $1,$2,$3
