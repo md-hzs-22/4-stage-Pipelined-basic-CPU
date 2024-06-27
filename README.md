@@ -25,8 +25,6 @@ The main objective of my project is to take the idea of pipelining and implement
 
 ![Bad request](https://github.com/md-hzs-22/4-stage-Pipelined-basic-CPU/blob/main/Screenshots/Screenshot%202024-06-26%20163857.png)
 
-`Note that ALU is written to handle simple instructions, that are, ADD, SUB, AND, XOR, COM, MUL, ADDI. So if you want to add a new insruction for testing in imem_test().txt, take care of this situation.`
-
 ## Technical Stack
 
 - Language used : Verilog
@@ -35,8 +33,13 @@ The main objective of my project is to take the idea of pipelining and implement
 ## How to run
 
 In order to run the CPU, you need to download each and every file in the single folder. After that, create a new project on Vivado software and add each and every file to the project. Select Zedboard for the project. 
-* If you want to see the working and final result of the test instruction set, set testbench file as top priority and simulate the file
-* If you want to implement the given CPU on boards like zedboard, then make pipeline_4stage.v as top file and run implementaion. 
+* If you want to see the working and final result of the test instruction set (instructions are in the file named imem_test().txt), set testbench file as top priority and simulate the file
+* If you want to implement the given CPU on boards like zedboard, then make pipelined_4stage.v as top file and run implementaion.
+
+`Note : ` ALU is written to handle simple instructions, that are, ADD, SUB, AND, XOR, COM, MUL, ADDI. So if you want to add a new insruction for testing in imem_test().txt, take care of this situation.
+
+`Note : ` Do not change any name of the file 'and' do not add instruction other than mentioned.
 
 ## Usage
+
 
