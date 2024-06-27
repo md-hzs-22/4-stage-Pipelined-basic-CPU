@@ -13,13 +13,15 @@ There are total 5 essential subtasks that a computer performs (in order) while e
 4. Write the result in computer memory (if required)
 5. Write the result in the register (if required)
 
-So, the main idea of pipelining is that the five subparts are performed in CPU in such way that if instruction 1 completes its fetching part, instruction 2 enters for fetching and instruction 1 goes on for decoding part. The pipelining is efficient as it saves a lot of time. Assume that each and every subpart of the instruction takes a single clock cycle to perform and lets assume there are x instructions. So without pipelining, computer takes 5x clock cycles to compute but with pipeling, it only takes x+4 clock cycles. The folloing picture will hel you understand about pipelining.
+So, the main idea of pipelining is that the five subparts are performed in CPU in such way that if instruction 1 completes its fetching part, instruction 2 enters for fetching and instruction 1 goes on for decoding part. The pipelining is efficient as it saves a lot of time. Assume that each and every subpart of the instruction takes a single clock cycle to perform and lets assume there are x instructions. So without pipelining, computer takes 5x clock cycles to compute but with pipeling, it only takes x+4 clock cycles. The folloing picture will help you understand ore on the topic.
 
 ![Bad request](https://qph.cf2.quoracdn.net/main-qimg-98acc2db73e312c886ac95909a692b23-lq)
 
 As we can see in aboove image at t3, instruction 3 is at fetching, instruction 2 at decoding and instruction 1 at executing phase simultaneously.
 
-So, taking the idea of pipelining, I implemented the CPU by writing the codes of each and every section such as ALU, control unit, register file, instruction memory ,etc and joined them together to work as a functioning pipelined CPU. Following is the image of pipelined CPU. 
+## Objective
+
+The main objective of my project is to take the idea of pipelining and implement the CPU by writing the codes of each and every section of CPU such as ALU, control unit, register file, instruction memory ,etc and to join them together so as to work as a functioning pipelined CPU. Following is the image of pipelined CPU. 
 
 ![Bad request](https://github.com/md-hzs-22/4-stage-Pipelined-basic-CPU/blob/main/Screenshots/Screenshot%202024-06-26%20163857.png)
 
@@ -32,7 +34,9 @@ So, taking the idea of pipelining, I implemented the CPU by writing the codes of
 
 ## How to run
 
-In order to run the CPU, you need to download each and every file in the single folder. After that, create a new project on Vivado software and add each and every file to the project. Select Zedboard for the project. After you created the project set testbench file as the top priority file and run simulation for seeing the result. And if you want to implement on boards like zedboard, make pipelined_4stage.v as top priority. 
+In order to run the CPU, you need to download each and every file in the single folder. After that, create a new project on Vivado software and add each and every file to the project. Select Zedboard for the project. 
+* If you want to see the working and final result of the test instruction set, set testbench file as top priority and simulate the file
+* If you want to implement the given CPU on boards like zedboard, then make pipeline_4stage.v as top file and run implementaion. 
 
 ## Usage
 
